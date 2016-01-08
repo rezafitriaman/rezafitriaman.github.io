@@ -1,7 +1,26 @@
+$font-primaire: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+
+@media all and (max-width: 1200px) { /* screen size until 1200px */
+    body {
+        font-size: 1.5em; /* 1.5x default size */
+    }
+}
+@media all and (max-width: 1000px) { /* screen size until 1000px */
+    body {
+        font-size: 1.2em; /* 1.2x default size */
+        }
+    }
+@media all and (max-width: 500px) { /* screen size until 500px */
+    body {
+        font-size: 1.0em; /* 0.8x default size */
+        }
+    }
+	
 .name {
     display: block;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: $font-primaire;
     font-size: 2em;
     font-weight: 700;
 	}
@@ -9,23 +28,24 @@
 .tools {
     display: block;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: $font-primaire;
     font-size: 1em;
     font-weight: 500;
 	}
 	
 .intro-text 	{
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: $font-primaire;
     font-size: 1.25em;
     font-weight: 300;
 	}
 
 .navbar {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: $font-primaire;
     font-weight: 700;
 	}
 
 .woorden {
-	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: $font-primaire;
 	}
+

@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 																					<!-- voor internet explorer -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">																	<!-- voor mobiel responsief -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- voor internet explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- voor mobiel responsief -->
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Bereken uw Return on Investment">
     <meta name="author" content="Reza Fitriaman">
@@ -21,35 +21,48 @@
 	<link href="css/main.css" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-
+	
+	
   </head>
 
   <body>
 
     <!-- Navigatie bar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">																				 <!-- Bootstrap navigation bar -->						
-      <div class="container">
-        <div class="navbar-header page-scroll">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">			<!-- collapsed als de scherm kleiner wordt -->	
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#home">Omgekeerde ROI</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#roi-tools">ROI Tools</a></li>
-            <li><a href="#schelte-meinsma">Schelte Meinsma</a></li>
-			<li><a href="#vragen">Vragen</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"><!-- Bootstrap navigation bar -->						
+		<div class="container">
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar"><!-- collapsed als de scherm kleiner wordt -->	
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#home">Omgekeerde ROI</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a href="#home" class="hidden-xs">Home</a>
+						<a href="#home" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Home</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#roi-tools" class="hidden-xs">ROI Tools</a>
+						<a href="#roi-tools" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">ROI Tools</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#schelte-meinsma" class="hidden-xs">Schelte Meinsma</a>
+						<a href="#schelte-meinsma" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Schelte Meinsma</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#vragen" class="hidden-xs">Vragen</a>
+						<a href="#vragen" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" >Vragen</a>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
     </nav>
-	
+
+
 		<!-- jumbotron -->
 	<div class="jumbotron" id="home">
 		
@@ -62,18 +75,18 @@
 				
 				
 		<!-- moebiel nummer en emailadres -->		
-		<div class="container text-center">
-			<div class="row bottom-message-section">
-				<div class="col-md-6 padding-top-10">
-					<h5 class="intro-text"><span class="glyphicon glyphicon-phone"></span> 06-15832122</h5>
-				</div>
-				<div class="col-md-6 padding-top-10">
-					<h5 class="intro-text"><span class="glyphicon glyphicon-envelope"></span> info@scheltemeinsma.nl</h5>
+			<div class="container text-center">
+				<div class="row bottom-message-section">
+					<div class="col-md-6 padding-top-10">
+						<h5 class="intro-text"><span class="glyphicon glyphicon-phone"></span> 06-15832122</h5>
+					</div>
+					<div class="col-md-6 padding-top-10">
+						<h5 class="intro-text"><span class="glyphicon glyphicon-envelope"></span> info@scheltemeinsma.nl</h5>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-				
+	</div>			
 				
 		<!-- Modal voorbeeld berekeningen -->		
 				<div class="modal fade woorden" id="mymodal">
@@ -119,34 +132,44 @@
 												</div>
 											</div>
 										</form>	
-												<div class="container text-center">
-													<span class="glyphicon glyphicon-arrow-down"></span>
-												</div>
-												<div class="container text-center">
-													<h5>Betaald verkeer is 35% Adwords + 10% links (Samen 45%)</h5>
-												</div>
-												<div class="container text-center">
-													<span class="glyphicon glyphicon-arrow-down"></span>
-												</div>
-												<div class="container text-center">
-													<h5>45% van 100 bezoekers is 45 bezoekers kopen</h5>
-												</div>
-												<div class="container text-center">
-													<span class="glyphicon glyphicon-arrow-down"></span>
+												<div class="row text-center">
+													<div class="col-md-12">
+														<span class="glyphicon glyphicon-arrow-down"></span>
+													</div>
 												</div>
 												<div class="row text-center">
 													<div class="col-md-12">
-													<h5>Voor adwords zijn 35% van 100.000 bezoekers nodig is 35.000. Met de ingevoerde zoektermen zijn er 0 bezoekers mogelijk.</h5>
+														<h5>Betaald verkeer is 35% Adwords + 10% links (Samen 45%)</h5>
+													</div>
+												</div>
+												<div class="row text-center">
+													<div class="col-md-12">
+														<span class="glyphicon glyphicon-arrow-down"></span>
+													</div>
+												</div>
+												<div class="row text-center">
+													<div class="col-md-12">
+														<h5>45% van 100 bezoekers is 45 bezoekers kopen</h5>
+													</div>
+												</div>
+												<div class="row text-center">
+													<div class="col-md-12">
+														<span class="glyphicon glyphicon-arrow-down"></span>
+													</div>
+												</div>
+												<div class="row text-center">
+													<div class="col-md-12">
+														<h5>Voor adwords zijn 35% van 100.000 bezoekers nodig is 35.000. Met de ingevoerde zoektermen zijn er 0 bezoekers mogelijk.</h5>
 														<h5><span class="glyphicon glyphicon-remove-circle"></span> Dit is dus niet mogelijk</h5>
 													</div>
 												</div>
 										<form>
 											<div class="row">
-												<div class="form-group col-md-8 col-xs-8">
-													<label for="doelstelling" class="control-label">Doelstelling/omzet per maand</label>
+												<div class="form-group col-md-6 col-xs-6">
+													<label for="doelstelling" class="control-label">Doel/omzet per maand</label>
 													<input type="text" class="form-control" id="doelstelling" placeholder="€ 100">
 												</div>
-												<div class="form-group col-md-4 col-xs-4">
+												<div class="form-group col-md-6 col-xs-6">
 													<label for="marge" class="control-label">Marge</label>
 													<select id="marge" class="form-control">
 														<option value="text">> 15%</option>
@@ -293,7 +316,7 @@
 						</div>
 					</div>
 				</div>
-		</div>
+		
 			
 		<!-- omgekeerderoi form -->
 	<div class="container padding-top-40 padding-bottom-50" id="roi-tools">
@@ -420,11 +443,9 @@
 				<p class="woorden">shoping.com</p>
 			</div>
 		</div>
-	
 	</div>
 	
-					
-					<!-- Andere tools -->
+	<!-- Andere tools -->
 	<div class="bg-color-green padding-bottom-80">
 			<div class="container padding-top-80">
 				<div class="row">
@@ -523,31 +544,30 @@
 	</div>	
 							
 							<!-- footer -->	
-	<div class="bg-color-dark padding-bottom-80">
-		<div class="container padding-top-80">
-			<footer>
-				<div class="row">
-					<div class="col-md-4 col-sm-4">
-						<img class="img-responsive center-block" style="width: 25px" src="img/pin.png"/>
-						<p class="color-white text-center padding-top-10 woorden">Herestraat 106 (Launchcafé) 9711 LM Groningen</p>
-					</div>
-					<div class="col-md-4 col-sm-4 text-center">
-						<a href="#"><i class="fa fa-facebook margin-right-5 color-white"></i></a>
-						<a href="#"><i class="fa fa-twitter margin-right-5 color-white"></i></a>
-						<a href="#"><i class="fa fa-linkedin margin-right-5 color-white"></i></a>
-						<a href="#"><i class="fa fa-google-plus margin-right-5 color-white"></i></a>
-						<a href="https://dbk.nl/" target="_blank"><p class="color-white padding-top-15 woorden">&copy; 2015 DBK</p></a>
-					</div>
-					<div class="col-md-4 col-sm-4 text-center">
-						<a href="#home"><i class="fa fa-chevron-up fa-lg color-white"></i></a>
-						<div>
+	<footer>						
+		<div class="bg-color-dark padding-bottom-80">
+			<div class="container padding-top-80">
+					<div class="row">
+						<div class="col-md-4 col-sm-4">
+							<img class="img-responsive center-block" style="width: 25px" src="img/pin.png"/>
+							<p class="color-white text-center padding-top-10 woorden">Herestraat 106 (Launchcafé) 9711 LM Groningen</p>
+						</div>
+						<div class="col-md-4 col-sm-4 text-center">
+							<a href="#"><i class="fa fa-facebook margin-right-5 color-white"></i></a>
+							<a href="#"><i class="fa fa-twitter margin-right-5 color-white"></i></a>
+							<a href="#"><i class="fa fa-linkedin margin-right-5 color-white"></i></a>
+							<a href="#"><i class="fa fa-google-plus margin-right-5 color-white"></i></a>
+							<a href="https://dbk.nl/" target="_blank"><p class="color-white padding-top-15 woorden">&copy; 2015 DBK</p></a>
+						</div>
+						<div class="col-md-4 col-sm-4 text-center">
+							<a href="#home"><i class="fa fa-chevron-up fa-lg color-white"></i></a>
+							<div>
+							</div>
 						</div>
 					</div>
-				</div>
-			</footer>
-		</div>
-	</div>	
-			
+			</div>
+		</div>	
+	</footer>		
 					
 					
 					
@@ -560,25 +580,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
+	<script src="js/jquery.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.js"></script>
-	<script>
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-	</script>
+	<script src="js/scrolling.js"></script>
+	<!-- Scroll script -->
+
 	
   </body>
 </html>
