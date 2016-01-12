@@ -6,19 +6,24 @@
 
 */
 /* LAYOUTS - Page layouts styles */
-/* line 1, ../scss/layouts/_colour.scss */
+/* line 1, ../scss/layouts/_color.scss */
 .bg-color-dark {
   background-color: #272727;
 }
 
-/* line 5, ../scss/layouts/_colour.scss */
+/* line 5, ../scss/layouts/_color.scss */
 .bg-color-green {
   background-color: lightgreen;
 }
 
-/* line 9, ../scss/layouts/_colour.scss */
+/* line 9, ../scss/layouts/_color.scss */
 .color-white {
   color: white;
+}
+
+/* line 12, ../scss/layouts/_color.scss */
+.color-red {
+  color: red;
 }
 
 /* line 1, ../scss/layouts/_jumbotron.scss */
@@ -97,7 +102,7 @@
   /* screen size until 1200px */
   /* line 5, ../scss/layouts/_typografie.scss */
   body {
-    font-size: 1.5em;
+    font-size: 1.3em;
     /* 1.5x default size */
   }
 }
