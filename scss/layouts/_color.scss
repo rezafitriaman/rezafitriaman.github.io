@@ -1,14 +1,35 @@
-.bg-color-dark{
+.bg-color-dark {
 	background-color: #272727;
 }
 
-.bg-color-green{
-	background-color: lightgreen;
+.bg-image {
+	background: url('../img/bg_header.jpg') no-repeat center center fixed;
+}    
+
+.bg-color-blue {
+	background-color: #0a8fd5;
+}
+
+.bg-color-white {
+	background-color: white;
+}
+
+.bg-color-orange {
+	background-color: #E6AB43;
 }
 
 .color-white{
 	color: white;
 }
+
 .color-red{
 	color:	red;
+}
+
+.color-blue{
+	color:	#0099cc;
+}
+
+.color-orange{
+	color:	#ff6600;
 }

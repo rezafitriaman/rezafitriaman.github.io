@@ -19,8 +19,7 @@
     <!-- Custom styles -->
     <link href="css/font-awesome.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
-	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 	
 	
   </head>
@@ -30,6 +29,7 @@
     <!-- Navigatie bar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"><!-- Bootstrap navigation bar -->						
 		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header page-scroll">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar"><!-- collapsed als de scherm kleiner wordt -->	
 					<span class="sr-only">Toggle navigation</span>
@@ -37,11 +37,15 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#home">Omgekeerde ROI</a>
+				<a href="#home" class="navbar-brand">
+					<img alt="" class="img-responsive width-navbar-brand" src="img/logo.png">
+				</a>
 			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="navbar">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active">
+					<li class="hidden">
 						<a href="#home" class="hidden-xs">Home</a>
 						<a href="#home" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Home</a>
 					</li>
@@ -60,47 +64,37 @@
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
-    </nav>
+    </nav><!-- End Navigatie bar -->
 
 
-		<!-- jumbotron -->
-	<div class="jumbotron" id="home">
-		
-		<div class="container text-center">		
-			<h1 class="padding-top-80 name">Omgekeerde ROI</h1>
-				<p class="intro-text">U kunt de ROI berekenen om na te gaan wat een bepaalde investering heeft opgeleverd.</p>
-				<button type="button" class="btn btn-primary intro-text center" data-toggle="modal" data-target="#mymodal">
-					Voorbeeld Berekening
-				</button>
-				
-				
-		<!-- moebiel nummer en emailadres -->		
-			<div class="container text-center">
-				<div class="row bottom-message-section">
-					<div class="col-md-6 padding-top-10">
-						<h5 class="intro-text"><span class="glyphicon glyphicon-phone"></span> 06-15832122</h5>
-					</div>
-					<div class="col-md-6 padding-top-10">
-						<h5 class="intro-text"><span class="glyphicon glyphicon-envelope"></span> info@scheltemeinsma.nl</h5>
-					</div>
-				</div>
+		<!-- header -->
+	<header style="background-image: url('img/bg_header.jpg')" id="home">
+        <div class="intro-content">
+            <img src="img/brand.png" class="img-responsive img-centered" alt="">
+            <div class="brand-name">Omgekeerde ROI</div>
+            <hr class="colored">
+            <div class="brand-name-subtext">U kunt de ROI berekenen om na te gaan wat een bepaalde investering heeft opgeleverd</div>
+            <div class="padding-top-80">
+            <button type="button" class="btn btn-warning input-lg intro-text center" data-toggle="modal" data-target="#mymodal">
+				Voorbeeld Berekening
+			</button>
 			</div>
-		</div>
-	</div>			
+        </div>
+    </header>		
 				
 		<!-- Modal voorbeeld berekeningen -->		
 				<div class="modal fade woorden" id="mymodal">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h3 class="text-center">Bereken Return on Investment van webshop.nl</h3>
+								<h3 class="text-center bold">Bereken Return on Investment van webshop.nl</h3>
 							</div>
 							<div class="modal-body">
 								<div class="panel panel-default">
-									<h3 class="text-center">100.000 Bezoekers</h3>
+									<h3 class="text-center bold">100.000 Bezoekers</h3>
 								</div>
 									<div class="text-center">
-										<span class="glyphicon glyphicon-arrow-down"></span>
+										<span class="glyphicon glyphicon-arrow-down color-blue"></span>
 									</div>
 									<div class="panel-body">
 									<!-- form voorbeeld-->
@@ -134,27 +128,27 @@
 										</form>	
 												<div class="row text-center">
 													<div class="col-md-12">
-														<span class="glyphicon glyphicon-arrow-down"></span>
+														<span class="glyphicon glyphicon-arrow-down color-blue"></span>
 													</div>
 												</div>
 												<div class="row text-center">
 													<div class="col-md-12">
-														<h5>Betaald verkeer is 35% Adwords + 10% links <h4>(Samen 45%)</h4></h5>
+														<h5>Betaald verkeer is 35% Adwords + 10% links <h4 class="bold">(Samen 45%)</h4></h5>
 													</div>
 												</div>
 												<div class="row text-center">
 													<div class="col-md-12">
-														<span class="glyphicon glyphicon-arrow-down"></span>
+														<span class="glyphicon glyphicon-arrow-down color-blue"></span>
 													</div>
 												</div>
 												<div class="row text-center">
 													<div class="col-md-12">
-														<h5>45% van 100.000 bezoekers is <h4>45.000 bezoekers kopen</h4></h5>
+														<h5>45% van 100.000 bezoekers is <h4 class="bold">45.000 bezoekers kopen</h4></h5>
 													</div>
 												</div>
 												<div class="row text-center">
 													<div class="col-md-12">
-														<span class="glyphicon glyphicon-arrow-down"></span>
+														<span class="glyphicon glyphicon-arrow-down color-orange"></span>
 													</div>
 												</div>
 												<div class="row text-center">
@@ -178,7 +172,7 @@
 												</div>
 											</div>
 										</form>	
-										<div class="container text-center">
+										<div class="row text-center">
 											<div class="col-md-12 col-xs-12">
 												<span class="glyphicon glyphicon-arrow-down"></span>
 											</div>
@@ -193,14 +187,13 @@
 												</div>
 											</div>
 										</form>
-										<div class="container text-center">
-											<div class="row">
-												<div class="col-md-6 col-xs-6">
-													<span class="glyphicon glyphicon-arrow-down"></span>
-												</div>
-												<div class="col-md-6 col-xs-6">
+										<div class="row text-center">
+											<div class="col-md-6 col-xs-6">
+												<span class="glyphicon glyphicon-arrow-down"></span>
+											</div>
+											<div class="col-md-6 col-xs-6">
 													
-												</div>
+												
 											</div>
 										</div>
 										<form>
@@ -213,14 +206,12 @@
 												</div>
 											</div>
 										</form>
-										<div class="container text-center">
-											<div class="row">
-												<div class="col-md-6 col-xs-6">
-													<span class="glyphicon glyphicon-arrow-down"></span>
-												</div>
-												<div class="col-md-6 col-xs-6">
+										<div class="row text-center">
+											<div class="col-md-6 col-xs-6">
+												<span class="glyphicon glyphicon-arrow-down"></span>
+											</div>
+											<div class="col-md-6 col-xs-6">
 													
-												</div>
 											</div>
 										</div>	
 										<form>
@@ -246,22 +237,22 @@
 												</div>
 											</div>
 										</form>	
-										<div class="container text-center">
+										<div class="row text-center">
 											<div class="col-md-12 col-xs-12">
-												<span class="glyphicon glyphicon-arrow-down"></span>
+												<span class="glyphicon glyphicon-arrow-down color-orange"></span>
 											</div>
 										</div>
 										<div class="row text-center">
 											<div class="col-md-12">
-												<h5>Gemiddelde CPC is € 7.500 / 45.000 bezoekers. <h4>€ 0,17 budget per bezoek </h4></h5>
+												<h5>Gemiddelde CPC is € 7.500 / 45.000 bezoekers. <h4 class="bold">€ 0,17 budget per bezoek </h4></h5>
 												<h5>De ingevoerde zoektermen hebben een gemiddeld CPC van €1</h5>
 												<h5 class="color-red"><span class="glyphicon glyphicon-remove-circle"></span> Uw budget is dus ontoereikend.</h5>
 											</div>
 										</div>
 									</div>
 									<div class="text-center">
-										<h4>Analyse zoektermen</h4>
-										<h6>Google KeyWord Tool<h6>
+										<h3 class="bold">Analyse zoektermen</h3>
+										<h4>Google KeyWord Tool<h4>
 									</div>
 									<form>
 										<div class="form-group text-center">
@@ -323,6 +314,8 @@
 		<div class="panel panel-default">
 			<div class="panel-heading"> 
 			<h2 class="text-center name">ROI TOOLS</h2>
+			<p class="text-center">Bereken uw Return on Investment</p>
+			<hr class="colored">
 			</div>
 				<div class="panel-body">
 					<!-- Gewenste, Marge, Conversie, form -->
@@ -400,20 +393,11 @@
 								<input type="text" class="form-control woorden" id="zoekterm5" placeholder="zoekterm 5"/>
 							</div>
 						</div>
-					<!-- nieuwsbrief form -->	
-						<div class="row padding-top-10">
-							<div class="col-md-10 padding-top-10">
-									<div class="checkbox woorden">
-										<label>
-											<input type="checkbox"/>Ja, ik wil mij graag aanmelden voor de nieuwsbrief
-										</label>
-									</div>
-							</div>
-						</div>
+											
 					<!-- Button Genereer ROI -->		
 						<div class="row padding-top-10">
 							<div class="col-md-2 padding-top-10">
-							<button type="button" class="btn btn-success woorden">Genereer ROI</button>
+							<button type="button" class="btn btn-success input-lg woorden">Genereer ROI</button>
 							</div>
 						</div>
 					</form>
@@ -422,73 +406,173 @@
 	</div>
 					
 					<!-- Zij gingen u voor -->
-	<div class="container text-center col-md-12 padding-bottom-30">
-		<h3 class="name">ZIJ GINGEN U VOOR</h3>
-	</div>	
-	<div class="container text-center padding-bottom-80">
-		<div class="row">
-			<div class="col-md-3 col-sm-2">
-				<p class="woorden">wilsumerberge.nl</p>
+	<div class="bg-color-blue">				
+		<div class="container text-center col-md-12 padding-bottom-30 padding-top-40">
+			<h2 class="name color-white">Zij gingen u voor</h2>
+				<hr class="colored">
+		</div>	
+			<div class="container text-center padding-bottom-80">
+				<div class="row">
+					<!-- visible lg -->
+					<div class="col-md-3 visible-md visible-lg padding-bottom-20">
+						<div class="thumbnail">
+							<div class="caption">
+								<h4 class="padding-top-10 bold">WILSUMERBERGE</h4>
+                   					<p class="text-center color-white">Camping Wilsumer Berge vlak over de grens</p>
+                    					<button type="button" class="btn btn-success woorden"><a href="http://www.wilsumerberge.nl" target="_blank" class="color-white tools tools_focus">BEKIJK</a></button>
+							</div>
+								<img class="img-responsive center-block img-thumbnail" src="img/website_1.jpg"/>
+						</div>
+					</div>
+						<!-- visible xs -->
+						<div class="col-xs-12 visible-xs visible-sm padding-bottom-20">
+							<div class="thumbnail">
+								<div class="caption">
+									<h4 class="padding-top-10 bold">WILSUMERBERGE</h4>
+                   						<p class="text-center color-white">Camping Wilsumer Berge vlak over de grens</p>
+                    						<button type="button" class="btn btn-success woorden"><a href="http://www.wilsumerberge.nl" target="_blank" class="color-white tools tools_focus">BEKIJK</a></button>
+								</div>
+									<img class="img-responsive center-block img-thumbnail" src="img/website_1xs.jpg"/>
+							</div>
+						</div>
+					<!-- visible lg -->	
+					<div class="col-md-3 visible-md visible-lg padding-bottom-20">
+						<div class="thumbnail">
+							<div class="caption">
+								<h4 class="padding-top-10 bold">BEWAKINGSCAMERA</h4>
+                   					<p class="text-center color-white">Bascom Camera's is dé bewakingscamera specialist</p>
+                    					<button type="button" class="btn btn-success woorden"><a href="http://www.bewakingscamera.nl" target="_blank" class="color-white tools tools_focus">BEKIJK</a></button>
+							</div>
+								<img class="img-responsive center-block img-thumbnail" src="img/website_2.jpg"/>
+						</div>	
+					</div>
+						<!-- visible xs -->
+						<div class="col-xs-12 visible-xs visible-sm padding-bottom-20">
+							<div class="thumbnail">
+								<div class="caption">
+									<h4 class="padding-top-10 bold">BEWAKINGSCAMERA</h4>
+                   						<p class="text-center color-white">Bascom Camera's is dé bewakingscamera specialist</p>
+                    						<button type="button" class="btn btn-success woorden"><a href="http://www.bewakingscamera.nl" target="_blank" class="color-white tools tools_focus">BEKIJK</a></button>
+								</div>
+									<img class="img-responsive center-block img-thumbnail" src="img/website_2xs.jpg"/>
+							</div>
+						</div>
+					<!-- visible lg -->		
+					<div class="col-md-3 visible-md visible-lg padding-bottom-20">
+						<div class="thumbnail">
+							<div class="caption">
+								<h4 class="padding-top-10 bold">MEINHOLLANDRAD</h4>
+                   					<p class="text-center color-white">Wir freuen uns auf Ihren Besuch in unserem Laden</p>
+                    					<button type="button" class="btn btn-success woorden"><a href="http://www.meinhollandrad.com" target="_blank" class="color-white tools tools_focus">BEKIJK</a></button>
+                    		</div>			
+							<img class="img-responsive center-block img-thumbnail" src="img/website_3.jpg"/>
+						</div>
+					</div>
+						<!-- visible xs -->
+						<div class="col-xs-12 visible-xs visible-sm padding-bottom-20">
+							<div class="thumbnail">
+								<div class="caption">
+									<h4 class="padding-top-10 bold">MEINHOLLANDRAD</h4>
+                   						<p class="text-center color-white">Wir freuen uns auf Ihren Besuch in unserem Laden</p>
+                    						<button type="button" class="btn btn-success woorden"><a href="http://www.meinhollandrad.com" target="_blank" class="color-white tools tools_focus">BEKIJK</a></button>
+								</div>
+									<img class="img-responsive center-block img-thumbnail" src="img/website_3xs.jpg"/>
+							</div>
+						</div>
+					<!-- visible lg -->		
+					<div class="col-md-3 visible-md visible-lg padding-bottom-20">
+						<div class="thumbnail">
+							<div class="caption">
+								<h4 class="padding-top-10 bold">HOUSE</h4>
+                   					<p class="text-center color-white">by Martin LeVrie & The Saxophonist</p>
+                    					<button type="button" class="btn btn-success woorden"><a href="http://www.house.nl" target="_blank" class="color-white tools tools_focus">BEKIJK</a></button>
+                    		</div>			
+							<img class="img-responsive center-block img-thumbnail" src="img/website_4.jpg"/>
+						</div>
+					</div>
+						<!-- visible xs -->
+						<div class="col-xs-12 visible-xs visible-sm padding-bottom-20">
+							<div class="thumbnail">
+								<div class="caption">
+									<h4 class="padding-top-10 bold">HOUSE</h4>
+                   						<p class="text-center color-white">by Martin LeVrie & The Saxophonist</p>
+                    						<button type="button" class="btn btn-success woorden"><a href="http://www.house.nl" target="_blank" class="color-white tools tools_focus">BEKIJK</a></button>
+								</div>
+									<img class="img-responsive center-block img-thumbnail" src="img/website_4xs.jpg"/>
+							</div>
+						</div>
+				</div>
 			</div>
-			<div class="col-md-3 col-sm-2">
-				<p class="woorden">bewakingscamera.nl</p>
-			</div>
-			<div class="col-md-2 col-sm-2">
-				<p class="woorden">meinhollandrad.com</p>
-			</div>
-			<div class="col-md-2 col-sm-2">
-				<p class="woorden">house.nl</p>
-			</div>
-			<div class="col-md-2 col-sm-2">
-				<p class="woorden">shoping.com</p>
-			</div>
-		</div>
 	</div>
-	
+
+	<!-- nieuwsbrief-->
+	<div class="bg-color-orange">				
+		<div class="container">
+			<div class="row padding-top-40">
+				<div class="col-md-12 col-sm-12 text-center">
+					<h4 class="name">aanmelden voor nieuwsbrief</h4>
+				</div>
+			</div>
+				<div class="container col-md-12 col-sm-12 text-center padding-bottom-80 ">
+				<form class="form-inline padding-top-15" role="form">
+    				<div class="form-group">
+            			<input type="email" class="form-control input-lg margin-right-10" id="email" placeholder="email adres">
+    				</div>
+       				<button type="submit" class="btn btn-success input-lg">Aanmelden</button>
+  				</form>
+  				</div>		
+			</div>
+	</div>	
+
 	<!-- Andere tools -->
-	<div class="bg-color-green padding-bottom-80">
+	<div class="padding-top-80 padding-bottom-80 bg-image">
 			<div class="container padding-top-80">
 				<div class="row">
 					<div class="col-md-4 col-sm-4">
-						<img class="img-responsive center-block" style="width: 45px" src="img/search.png"/>
-							<img class="img-responsive center-block padding-top-10" style="width: 45px" src="img/streep-rood.png"/>
-							<p class="color-white text-center padding-top-10"><a href="http://www.google-seo-tool.nl/" target="_blank" class="color-white tools">Google SEO Tool</a></p>
-							
+						<img class="img-responsive center-block" style="width: 70px" src="img/search.png"/>
+							<h4 class="color-white text-center padding-top-10"><a href="http://www.google-seo-tool.nl/" target="_blank" class="color-white tools tools_focus">Google SEO Tool</a></h4>
+								<img class="img-responsive center-block" style="width: 45px" src="img/streep-rood.png"/>
+									<p class="text-center color-white">Doe de gratis scan, uw gegevens worden niet voor andere doeleinden gebruikt</p>
 					</div>
 					<div class="col-md-4 col-sm-4">
-						<img class="img-responsive center-block" style="width: 45px" src="img/back.png"/>
-							<img class="img-responsive center-block padding-top-10" style="width: 45px" src="img/streep-blauw.png"/>
-							<p class="color-white text-center padding-top-10"><a href="http://www.pagerank-backlink-tool.nl/" target="_blank" class="color-white tools">PageRank BackLink Tool</a></p>
-							
+						<img class="img-responsive center-block" style="width: 70px" src="img/back.png"/>
+							<h4 class="color-white text-center padding-top-10"><a href="http://www.pagerank-backlink-tool.nl/" target="_blank" class="color-white tools tools_focus">PageRank BackLink Tool</a></h4>
+								<img class="img-responsive center-block" style="width: 45px" src="img/streep-blauw.png"/>
+									<p class="text-center color-white">ontdek de waarde van uw PageRank en Backlinks in 2 stappen</p>
 					</div>
 					<div class="col-md-4 col-sm-4">
-						<img class="img-responsive center-block" style="width: 45px" src="img/word.png"/>
-							<img class="img-responsive center-block padding-top-10" style="width: 45px" src="img/streep-bruin.png"/>
-							<p class="color-white text-center padding-top-10"><a href="http://www.keyword-tool-google.nl/" target="_blank" class="color-white tools">KeyWord Tool</a></p>
+						<img class="img-responsive center-block" style="width: 70px" src="img/word.png"/>
+							<h4 class="color-white text-center padding-top-10"><a href="http://www.keyword-tool-google.nl/" target="_blank" class="color-white tools tools_focus">KeyWord Tool</a></h4>
+								<img class="img-responsive center-block" style="width: 45px" src="img/streep-bruin.png"/>
+									<p class="text-center color-white">Zoekwoorden gescheiden door nieuwe regel, of door een komma</p>
 					</div>
 				</div>
 			</div>
 	</div>	
 	
-	
-	
-					<!-- Info Schelte -->		
+	<!-- Info Schelte -->		
 	<div class="bg-color-dark padding-bottom-80" id="schelte-meinsma">					
 		<div class="container text-center padding-top-80">
-			<h1 class="color-white name woorden">SCHELTE MEINSMA</h1>
-			<p class="color-white woorden">Strategisch online marketeer</p>
+			<h2 class="color-white name">SCHELTE MEINSMA</h2>
+			<p class="color-white">Strategisch online marketeer</p>
 		</div>					
 			<div class="container padding-top-80">																				<!-- foto en gegevens linkerkant -->
 				<div class="row">
 					<div class="col-md-6 col-sm-6">
 						<img class="img-circle img-responsive center-block" src="img/scheltemeinsma.jpg"/>
 							<p class="color-white text-center padding-top-40 woorden">MIJN SPECIALISMEN</p>
-								<div class="container col-md-6 col-sm-6 center">
+								<div class="container col-md-12 col-xs-6 center">
 									<div class="row text-center center woorden">
-										<span class="label label-info">Online Strategie</span>
-										<span class="label label-info">Alles over Google</span>
-										<span class="label label-info">Succesvol op internet</span>
-										<span class="label label-info">Webwinkels met resultaat</span>
+										<span class="label label-warning">Online Strategie</span>
+										<div class=" row padding-top-5">
+										<span class="label label-warning">Alles over Google</span>
+										</div>
+										<div class=" row padding-top-5">
+										<span class="label label-warning">Succesvol op internet</span>
+										</div>
+										<div class="row padding-top-5">
+										<span class="label label-warning">Webwinkels met resultaat</span>
+										</div>
 									</div>
 								</div>
 						
@@ -510,33 +594,33 @@
 	</div>
 
 					<!-- contact mij form -->	
-	<div class="padding-bottom-80" id="vragen">
+	<div class="padding-bottom-80 bg-color-white" id="vragen">
 		<div class="container text-center padding-top-80">
-			<h1 class="name">VRAGEN</h1>
+			<h2 class="name">VRAGEN</h2>
 			<p class="woorden">Stuur mij e-mail</p>
 		</div>
 			<div class="container padding-top-40">
 				<form rol="form">
 					<div class="row">
 						<div class="form-group col-md-4 padding-top-10">
-							<input type="email" class="form-control woorden" id="email" name="email" placeholder="email adres"/>
+							<input type="email" class="form-control woorden input-lg" id="email" name="email" placeholder="email adres"/>
 						</div>
 						<div class="form-group col-md-4 padding-top-10">
-							<input type="text" class="form-control woorden" id="naam" name="naam" placeholder="voornaam en achternaam"/>
+							<input type="text" class="form-control woorden input-lg" id="naam" name="naam" placeholder="voornaam en achternaam"/>
 						</div>
 						<div class="form-group col-md-4 padding-top-10">
-							<input type="text" class="form-control woorden" id="subject" name="subject" placeholder="subject"/>
+							<input type="text" class="form-control woorden input-lg" id="subject" name="subject" placeholder="subject"/>
 						</div>
 					</div>
 					<div class="row">
 						<div class="form-group col-md-12 padding-top-10">
-						<textarea class="form-control woorden" name="bericht" placeholder="type je bericht hier"></textarea>
+						<textarea class="form-control woorden input-lg" rows="9" name="bericht" placeholder="type je bericht hier"></textarea>
 						</div>
 					</div>
 							<!-- Button send ROI -->		
 						<div class="row">
-							<div class="col-md-2">
-							<button type="button" class="btn btn-success">Send</button>
+							<div class="col-md-12">
+							<button type="button" class="btn btn-success input-lg pull-right">Bericht verzenden</button>
 							</div>
 						</div>
 				</form>
@@ -585,7 +669,6 @@
     <script src="js/bootstrap.js"></script>
 	<script src="js/scrolling.js"></script>
 	<!-- Scroll script -->
-
-	
+		
   </body>
 </html>
